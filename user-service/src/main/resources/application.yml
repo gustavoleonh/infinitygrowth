@@ -1,0 +1,18 @@
+server:
+  port: 9003
+  servlet:
+    context-path: /user-service
+  shutdown: graceful
+
+spring:
+  application:
+    name: user-service
+  data:
+    mongodb:
+      readPreference: PRIMARY
+      uri: mongodb://localhost:27017/user-service-db
+
+logging:
+  level:
+    sun.rmi: ERROR
+

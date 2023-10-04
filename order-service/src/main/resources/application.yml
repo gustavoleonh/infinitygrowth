@@ -1,0 +1,28 @@
+server:
+  port: 9002
+  servlet:
+    context-path: /order-service
+  shutdown: graceful
+
+spring:
+  application:
+    name: order-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/order-service
+    username: root
+    password: mysql
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        ddl-auto: update
+logging:
+  level:
+    sun.rmi: ERROR
+
+api:
+  support-services:
+    product-service:
+      url: http://localhost:9001/product-service/
+

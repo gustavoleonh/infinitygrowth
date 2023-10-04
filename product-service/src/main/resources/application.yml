@@ -1,0 +1,18 @@
+server:
+    port: 9001
+    servlet:
+        context-path: /product-service
+    shutdown: graceful
+
+spring:
+    application:
+        name: product-service
+    data:
+        mongodb:
+            readPreference: PRIMARY
+            uri: mongodb://localhost:27017/product-service-db
+
+logging:
+    level:
+        sun.rmi: ERROR
+
