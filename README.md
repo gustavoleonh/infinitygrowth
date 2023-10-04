@@ -14,3 +14,17 @@ In the bustling metropolis of the digital marketplace, the need for distinct and
 2. **Orders**: Every click on the 'Buy Now' button sends ripples through our system, initiating a series of processes that ensure the product reaches the user's doorstep. This service ensures that every order, be it one or a thousand, is processed with the same efficiency.
 3. **User Interactions**: The essence of "TechTrove" lies in its community. This service will manage user profiles, reviews, ratings, and other interactions, ensuring that our users aren't just shoppers but contributors to the "TechTrove" ecosystem.
 
+**How to run each microservice:**
+
+`./gralew bootRun` 
+
+Is importat to mention that to run database services is required use docker images for MongoDB and MySQL.
+
+`docker pull mongo`
+
+`$ docker run --name some-mongo -d mongo:tag`
+
+`docker pull mysql`
+
+`docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=mysql -d mysql:tag`
+
